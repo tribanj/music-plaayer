@@ -1,0 +1,116 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    color: #fff;
+}
+
+/* Music Player Container */
+.music-player {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Track Cover Styling */
+.cover img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Track Information */
+.track-info {
+    margin: 15px 0;
+}
+
+.track-info h2,
+.track-info h3 {
+    margin: 5px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Progress Bar Container */
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 5px;
+    margin: 0 10px;
+    background: #444;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+#progress {
+    background: #4caf50;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    transition: width 0.2s ease;
+}
+
+/* Time Display */
+.current-time,
+.duration {
+    font-size: 12px;
+}
+
+/* Control Buttons */
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.control-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.control-btn:hover {
+    color: #4caf50;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Play/Pause Button */
+#play {
+    font-size: 24px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .music-player {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .music-player {
+        max-width: 95%;
+        font-size: 14px;
+    }
+}
